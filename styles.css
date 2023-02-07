@@ -5,5 +5,10 @@
 }
 
 img{
-    width: 1300px;
+    width: 1340px;
+}
+
+body{
+    background-color: #494949;
+    color: rgb(214, 214, 214);
 }

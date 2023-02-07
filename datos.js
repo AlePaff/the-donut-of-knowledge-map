@@ -11,6 +11,7 @@ let DATA = {
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "maths",
             },
             {
                 name: "astronomy-cosmology",
@@ -20,6 +21,7 @@ let DATA = {
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "astronomy-cosmology",
             },
             {
                 name: "chemistry",
@@ -29,6 +31,7 @@ let DATA = {
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "chemistry",
             },
             {
                 name: "computer-science",
@@ -38,6 +41,7 @@ let DATA = {
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "computer-science",
             },
             {
                 name: "physics",
@@ -47,15 +51,17 @@ let DATA = {
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "physics",
             },
             {
                 name: "engineering",
                 class: "",
                 shape: "poly",
-                coords: "1162,677,1209,722,1299,722,1298,764,1274,765,1304,783,1359,722,1391,717,1391,641,1374,600,1279,588,1223,599,1199,649,1199,666",
+                coords: "1162,677,1209,722,1299,722,1303,765,1274,765,1304,783,1359,722,1391,717,1391,641,1374,600,1279,590,1225,599,1199,649,1199,666",
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "engineering",
             },
             {
                 name: "biology",
@@ -65,6 +71,7 @@ let DATA = {
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "biology",
             },
             {
                 name: "",
@@ -85,7 +92,117 @@ let DATA = {
                 color: "blue",
             },
         ]
+    },
+    "maths": {
+        "title": "the map of maths",
+        "image": "images/math.png",
+        "imagemap": []
+    },
+    "physics": {
+        "title": "the map of physics",
+        "image": "images/physics.png",
+        "imagemap": [
+            {
+                name: "standard model",
+                class: "",
+                shape: "rect",
+                coords: "1220,601,1450,628",
+                href: "#",
+                alt: "",
+                color: "blue",
+                points_to: "fundamental-particles",
+            },
+            {
+                name: "particle physics",
+                class: "",
+                shape: "rect",
+                coords: "1488,1003,1727,1032",
+                href: "#",
+                alt: "",
+                color: "blue",
+                points_to: "fundamental-particles",
+            },
+            {
+                name: "quantum gravity",
+                class: "",
+                shape: "rect",
+                coords: "1647,421,1898,455",
+                href: "#",
+                alt: "",
+                color: "blue",
+                points_to: "quantum-gravity",
+            },
+            {
+                name: "computers",
+                class: "",
+                shape: "rect",
+                coords: "658,1016,762,1047",
+                href: "#",
+                alt: "",
+                color: "blue",
+                points_to: "computer-science",
+            },
+            {
+                name: "calculus",
+                class: "",
+                shape: "poly",
+                coords: "309,395,292,404,224,410,98,409,2,414,2,193,46,202,41,219,37,237,48,253,76,261,103,258,119,232,200,319",
+                href: "#",
+                alt: "",
+                color: "blue",
+                points_to: "maths"
+            },
+            {
+                name: "quantum physics",
+                class: "",
+                shape: "rect",
+                coords: "870,961,1465,1036",
+                href: "#",
+                alt: "",
+                color: "blue",
+                points_to: "quantum-physics",
+            },
+        ]
+    },
+    "engineering": {
+        "title": "the map of engineering",
+        "image": "images/engineering.png",
+        "imagemap": []
+    },
+    "computer-science": {
+        "title": "the map of computer science",
+        "image": "images/computer-science.png",
+        "imagemap": []
+    },
+    "chemistry": {
+        "title": "the map of chemistry",
+        "image": "images/chemistry.png",
+        "imagemap": []
+    },
+    "biology": {
+        "title": "the map of biology",
+        "image": "images/biology.png",
+        "imagemap": []
+    },
+    "quantum-physics": {
+        "title": "the map of quantum physics",
+        "image": "images/quantum-physics.jpg",
+        "imagemap": []
+    },
+    "quantum-gravity": {
+        "title": "the map of quantum gravity",
+        "image": "images/quantum-gravity.png",
+        "imagemap": []
+    },
+    "fundamental-particles": {
+        "title": "the map of fundamental particles",
+        "image": "images/fundamental-particles.png",
+        "imagemap": []
+    },
 
-    }
+
+
+
+
 }
 
