@@ -2,10 +2,13 @@ let DATA = {
     "donut": {
         "title": "the donut of knowledge",
         "image": "images/donut.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://www.youtube.com/watch?v=ohyai6GIRZg",
         "imagemap": [
             {
                 name: "maths",
-                class: "group1",
+                class: "maths",
                 shape: "poly",
                 coords: "266,1239,302,1263,363,1285,438,1309,487,1319,507,1285,582,1216,587,1165,589,1117,611,1034,675,1012,704,954,670,948,670,958,438,958,407,1005,421,1041,414,1124,382,1185",
                 href: "#",
@@ -15,7 +18,7 @@ let DATA = {
             },
             {
                 name: "astronomy-cosmology",
-                class: "group1",
+                class: "astronomy-cosmology",
                 shape: "poly",
                 coords: "745,1325,737,1239,715,1183,665,1155,588,1159,586,1207,505,1295,490,1316,568,1327,700,1326",
                 href: "#",
@@ -25,7 +28,7 @@ let DATA = {
             },
             {
                 name: "chemistry",
-                class: "group1",
+                class: "chemistry",
                 shape: "poly",
                 coords: "885,970,937,1079,905,1118,895,1156,961,1205,1057,1160,1133,1168,1138,1124,1122,1076,1152,999,1117,935,1065,882,1001,837,904,873,928,920,943,924,941,971",
                 href: "#",
@@ -35,7 +38,7 @@ let DATA = {
             },
             {
                 name: "computer-science",
-                class: "group1",
+                class: "computer-science",
                 shape: "poly",
                 coords: "620,670,704,689,775,697,827,699,826,784,808,800,774,846,763,892,716,921,706,950,670,948,670,918,438,920,438,886,419,729,601,707",
                 href: "#",
@@ -45,7 +48,7 @@ let DATA = {
             },
             {
                 name: "physics",
-                class: "group1",
+                class: "physics",
                 shape: "poly",
                 coords: "612,1035,675,1015,707,954,719,957,719,969,884,970,936,1082,904,1115,899,1142,892,1154,850,1198,741,1242,714,1183,668,1155,589,1159,589,1128",
                 href: "#",
@@ -55,7 +58,7 @@ let DATA = {
             },
             {
                 name: "engineering",
-                class: "",
+                class: "engineering",
                 shape: "poly",
                 coords: "1162,677,1209,722,1299,722,1303,765,1274,765,1304,783,1359,722,1391,717,1391,641,1374,600,1279,590,1225,599,1199,649,1199,666",
                 href: "#",
@@ -65,7 +68,7 @@ let DATA = {
             },
             {
                 name: "biology",
-                class: "",
+                class: "biology",
                 shape: "rect",
                 coords: "1325,1060,1491,1107",
                 href: "#",
@@ -74,10 +77,10 @@ let DATA = {
                 points_to: "biology",
             },
             {
-                name: "",
-                class: "",
+                name: "phylosophy",
+                class: "not-yet",
                 shape: "poly",
-                coords: "",
+                coords: "29,724,183,717,304,717,416,733,441,890,438,919,436,962,404,1004,417,1041,414,1125,378,1187,261,1240,178,1192,107,1119,64,1048,46,997,31,870",
                 href: "#",
                 alt: "",
                 color: "blue",
@@ -95,16 +98,22 @@ let DATA = {
     },
     "maths": {
         "title": "the map of maths",
-        "image": "images/math.png",
+        "image": "images/math.png",        
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://www.youtube.com/watch?v=OmJ-4B-mS-Y",
         "imagemap": []
     },
     "physics": {
         "title": "the map of physics",
         "image": "images/physics.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://www.youtube.com/watch?v=gAFAj3pzvAA",
         "imagemap": [
             {
                 name: "standard model",
-                class: "",
+                class: "fundamental-particles",
                 shape: "rect",
                 coords: "1220,601,1450,628",
                 href: "#",
@@ -114,7 +123,7 @@ let DATA = {
             },
             {
                 name: "particle physics",
-                class: "",
+                class: "fundamental-particles",
                 shape: "rect",
                 coords: "1488,1003,1727,1032",
                 href: "#",
@@ -124,7 +133,7 @@ let DATA = {
             },
             {
                 name: "quantum gravity",
-                class: "",
+                class: "quantum gravity",
                 shape: "rect",
                 coords: "1647,421,1898,455",
                 href: "#",
@@ -134,7 +143,7 @@ let DATA = {
             },
             {
                 name: "computers",
-                class: "",
+                class: "computers",
                 shape: "rect",
                 coords: "658,1016,762,1047",
                 href: "#",
@@ -144,7 +153,7 @@ let DATA = {
             },
             {
                 name: "calculus",
-                class: "",
+                class: "calculus",
                 shape: "poly",
                 coords: "309,395,292,404,224,410,98,409,2,414,2,193,46,202,41,219,37,237,48,253,76,261,103,258,119,232,200,319",
                 href: "#",
@@ -154,7 +163,7 @@ let DATA = {
             },
             {
                 name: "quantum physics",
-                class: "",
+                class: "quantum-physics",
                 shape: "rect",
                 coords: "870,961,1465,1036",
                 href: "#",
@@ -167,36 +176,57 @@ let DATA = {
     "engineering": {
         "title": "the map of engineering",
         "image": "images/engineering.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://www.youtube.com/watch?v=pQgxiQAMTTo",
         "imagemap": []
     },
     "computer-science": {
         "title": "the map of computer science",
         "image": "images/computer-science.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://youtu.be/SzJ46YA_RaA",
         "imagemap": []
     },
     "chemistry": {
         "title": "the map of chemistry",
         "image": "images/chemistry.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://youtu.be/P3RXtoYCW4M",
         "imagemap": []
     },
     "biology": {
         "title": "the map of biology",
         "image": "images/biology.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://youtu.be/wENhHnJI1ys",
         "imagemap": []
     },
     "quantum-physics": {
         "title": "the map of quantum physics",
         "image": "images/quantum-physics.jpg",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://youtu.be/gAFAj3pzvAA",
         "imagemap": []
     },
     "quantum-gravity": {
         "title": "the map of quantum gravity",
         "image": "images/quantum-gravity.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://www.youtube.com/watch?v=d-86tNCSJsg",
         "imagemap": []
     },
     "fundamental-particles": {
         "title": "the map of fundamental particles",
         "image": "images/fundamental-particles.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://youtu.be/mYcLuWHzfmE",
         "imagemap": []
     },
 
