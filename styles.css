@@ -12,3 +12,8 @@ body{
     background-color: #494949;
     color: rgb(214, 214, 214);
 }
+
+/* hace que el mouse se vea normal, no como manito */
+.not-yet{
+    cursor: default;
+}
