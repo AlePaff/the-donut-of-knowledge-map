@@ -1,39 +1,41 @@
-// $color-fondo: #494949;
-$color-fondo: white;
-// $color-texto: #d6d6d6;
-$color-texto: set-color-text($color-fondo);
+$color-fondo: #494949;
+$color-texto: #d6d6d6;
 // $color-fondo-botones: #757575;
 $color-fondo-botones: lighten($color-fondo, 10%);
 // $color-fondo-botones-hover: #919090;
 $color-fondo-botones-hover: lighten($color-fondo, 20%);
 
-@function set-color-text($color) {
-    @debug $color;
-    @if (lightness($color) < 40%) {
+$link-no-visitado: #d6d6d6;
+$link-visitado: #d6d6d6;
+// $max-width-zoom-out: 2600px;
 
-      @return #d6d6d6;
-    }
-    @else {
-      @return #1a1a1a;
-    }
+
+//funcion poner border a los elementos
+@mixin border() {
+    border: lighten($color-fondo, 20%) 3px solid;
+    border-radius: 5px;
 }
-
 
 .container {
     display: flex;
     justify-content: center;
+    
+    @include border();
+    img{
+        // max-width: $max-width-zoom-out;
+        width: 100%;
+        height: auto;
+    }
 }
 
-#container img{
-    width: 1340px;
-}
 
 body{
+    // max-width: $max-width-zoom-out;
     background-color: $color-fondo;
     color: $color-texto;
 }
 
-/* hace que el mouse se vea normal, no como manito */
+/* hace que el mouse se vea como flecha, no como manito */
 .not-yet{
     cursor: default;
 }
@@ -45,9 +47,13 @@ header{
     grid-template-areas:
     "titulo_desc github"
     "botones autor";
-
-    font-size: 30px;
+    
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
+    
+    @include border();
+    padding: 10px;
+    margin-bottom: 4px;
 }
 #titulo_desc{
     grid-area: titulo_desc;
@@ -66,6 +72,7 @@ header{
     justify-self: right;
     align-self: end;
 
+    //mostrar todo en una sola linea
     white-space: nowrap;
     *{
         display: inline;
@@ -75,8 +82,17 @@ header{
 
 
 
+
 h4, p, img{
     margin: 0px;
+}
+
+a:link{
+    color: $link-no-visitado;
+}
+
+a:visited{
+    color: $link-visitado;
 }
 
 button{
