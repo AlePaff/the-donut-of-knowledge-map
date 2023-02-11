@@ -18,7 +18,7 @@ let DATA = {
             },
             {
                 name: "astronomy-cosmology",
-                class: "astronomy-cosmology",
+                class: "not-yet",
                 shape: "poly",
                 coords: "745,1325,737,1239,715,1183,665,1155,588,1159,586,1207,505,1295,490,1316,568,1327,700,1326",
                 href: "#",

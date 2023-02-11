@@ -27,8 +27,8 @@ function load_section(id) {
 
     //si es la seccion principal, no se muestra el boton atras
     if (id == "donut") {
-        $("#atras").hide()
-        $("#home").hide()
+        // $("#atras").hide()
+        // $("#home").hide()
     } else {
         $("#atras").show()
         $("#home").show()
@@ -36,10 +36,14 @@ function load_section(id) {
 
     let datos = DATA[id]
 
-    //volver atras
+    //volver atras y home button
     $("#atras").off("click").on("click", function () {
         stack.pop()        //saca el elemento recien agregado
         load_section(stack.pop())      //devuelve el elemento anterior
+    })
+    $("#home").off("click").on("click", function () {
+        stack = []
+        load_section("donut")
     })
 
     // cosas del autor

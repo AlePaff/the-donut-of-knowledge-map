@@ -1,0 +1,110 @@
+// $color-fondo: #494949;
+$color-fondo: white;
+// $color-texto: #d6d6d6;
+$color-texto: set-color-text($color-fondo);
+// $color-fondo-botones: #757575;
+$color-fondo-botones: lighten($color-fondo, 10%);
+// $color-fondo-botones-hover: #919090;
+$color-fondo-botones-hover: lighten($color-fondo, 20%);
+
+@function set-color-text($color) {
+    @debug $color;
+    @if (lightness($color) < 40%) {
+
+      @return #d6d6d6;
+    }
+    @else {
+      @return #1a1a1a;
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#container img{
+    width: 1340px;
+}
+
+body{
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+/* hace que el mouse se vea normal, no como manito */
+.not-yet{
+    cursor: default;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "titulo_desc github"
+    "botones autor";
+
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#titulo_desc{
+    grid-area: titulo_desc;
+}
+#botones{
+    grid-area: botones;
+    justify-self: left;
+    align-self: end;
+}
+#github{
+    grid-area: github;
+    justify-self: right;
+}
+#autor{
+    grid-area: autor;
+    justify-self: right;
+    align-self: end;
+
+    white-space: nowrap;
+    *{
+        display: inline;
+    }
+}
+
+
+
+
+h4, p, img{
+    margin: 0px;
+}
+
+button{
+    padding: 0px;
+    margin: 0px;
+    
+    //para que quede la imagen dentro del boton centrada
+    img{
+        padding-top: 3px;
+        
+        // display: inline;
+        // justify-content: center;
+        // align-items: center;
+    }
+}
+
+#atras, #home, #github, #youtube-video{
+    background-color: $color-fondo-botones;
+    border-radius: 50%;
+    border: 0px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-fondo-botones-hover;
+        transform: scale(1.1);
+        transition: all 0.1s linear;
+    }
+}
+

@@ -1,19 +1,78 @@
 .container {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
 }
 
-img{
-    width: 1340px;
+#container img {
+  width: 1340px;
 }
 
-body{
-    background-color: #494949;
-    color: rgb(214, 214, 214);
+body {
+  background-color: white;
+  color: set-color-text(white);
 }
 
 /* hace que el mouse se vea normal, no como manito */
-.not-yet{
-    cursor: default;
+.not-yet {
+  cursor: default;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "titulo_desc github" "botones autor";
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+#titulo_desc {
+  grid-area: titulo_desc;
+}
+
+#botones {
+  grid-area: botones;
+  justify-self: left;
+  align-self: end;
+}
+
+#github {
+  grid-area: github;
+  justify-self: right;
+}
+
+#autor {
+  grid-area: autor;
+  justify-self: right;
+  align-self: end;
+  white-space: nowrap;
+}
+#autor * {
+  display: inline;
+}
+
+h4, p, img {
+  margin: 0px;
+}
+
+button {
+  padding: 0px;
+  margin: 0px;
+}
+button img {
+  padding-top: 3px;
+}
+
+#atras, #home, #github, #youtube-video {
+  background-color: white;
+  border-radius: 50%;
+  border: 0px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+#atras:hover, #home:hover, #github:hover, #youtube-video:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}/*# sourceMappingURL=styles.css.map */
