@@ -57,7 +57,7 @@ header {
   display: inline;
 }
 
-h4, p, img {
+h4, p {
   margin: 0px;
 }
 
@@ -69,12 +69,13 @@ a:visited {
   color: #d6d6d6;
 }
 
-button {
-  padding: 0px;
-  margin: 0px;
+a.button {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
-button img {
-  padding-top: 3px;
+a.button img {
+  margin: 8px;
 }
 
 #atras, #home, #github, #youtube-video {

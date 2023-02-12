@@ -84,6 +84,7 @@ let DATA = {
                 href: "#",
                 alt: "",
                 color: "blue",
+                points_to: "phylosophy",
             },
             {
                 name: "",
@@ -229,7 +230,14 @@ let DATA = {
         "youtube_video": "https://youtu.be/mYcLuWHzfmE",
         "imagemap": []
     },
-
+    "philosophy": {
+        "title": "the map of philosophy",
+        "image": "images/philosophy.png",
+        "author_name": "Carneades",
+        "author_link": "https://www.carneades.org/",
+        "youtube_video": "https://www.youtube.com/watch?v=YxBShJU_CKs",
+        "imagemap": []
+    }
 
 
 

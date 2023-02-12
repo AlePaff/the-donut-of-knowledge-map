@@ -81,9 +81,7 @@ header{
 
 
 
-
-
-h4, p, img{
+h4, p{
     margin: 0px;
 }
 
@@ -95,17 +93,10 @@ a:visited{
     color: $link-visitado;
 }
 
-button{
-    padding: 0px;
-    margin: 0px;
-    
-    //para que quede la imagen dentro del boton centrada
+a.button{
+    appearance: button;
     img{
-        padding-top: 3px;
-        
-        // display: inline;
-        // justify-content: center;
-        // align-items: center;
+        margin: 8px;        //para que quede centrado
     }
 }
 
