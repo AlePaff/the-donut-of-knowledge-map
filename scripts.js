@@ -10,7 +10,7 @@ function load_imagemap(id) {
     imagemap.forEach(area => {
         html += `<area class="` + area.class + `" shape="` + area.shape + `" coords="` + area.coords + `" href="` + area.href + `" alt="` + area.alt + `" color="` + area.color + `" name="` + area.name + `"`
         //si tiene un puntero a otra seccion, se le añade el evento onclick
-        if (area.points_to) {
+        if (area.points_to && (area.class != "not-yet")) {
             html += `onclick=load_section("` + area.points_to + `")`
         }
         html += `>`
@@ -27,8 +27,8 @@ function load_section(id) {
 
     //si es la seccion principal, no se muestra el boton atras
     if (id == "donut") {
-        // $("#atras").hide()
-        // $("#home").hide()
+        $("#atras").hide()
+        $("#home").hide()
     } else {
         $("#atras").show()
         $("#home").show()
