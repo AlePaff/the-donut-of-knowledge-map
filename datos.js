@@ -18,13 +18,13 @@ let DATA = {
             },
             {
                 name: "astronomy-cosmology",
-                class: "not-yet",
+                class: "astronomy-cosmology",
                 shape: "poly",
                 coords: "745,1325,737,1239,715,1183,665,1155,588,1159,586,1207,505,1295,490,1316,568,1327,700,1326",
                 href: "#",
                 alt: "",
                 color: "white",
-                points_to: "astronomy-cosmology",
+                points_to: "the-universe",
             },
             {
                 name: "chemistry",
@@ -114,14 +114,55 @@ let DATA = {
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=OmJ-4B-mS-Y",
         "imagemap": [
-            //mathematical chemistry 1394,1045,1603,1091
-            //biomathematics 1667,1182,1864,1206
-            //mathematical physics 1138,979,1326,1026
-            //engineering 1684,924,1857,950
-
-            //computer science 1430,184,1576,233
-            //theory of computation 383,196,536,239
-
+            {
+                name: "mathematical chemistry",
+                class: "mathematical-chemistry",
+                shape: "rect",
+                coords: "1394,1045,1603,1091",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "chemistry",
+            },
+            {
+                name: "biomathematics",
+                class: "biomathematics",
+                shape: "rect",
+                coords: "1667,1182,1864,1206",href: "#",
+                alt: "",
+                color: "white",
+                points_to: "biology",
+            },
+            {
+                name: "engineering",
+                class: "engineering",
+                shape: "rect",
+                coords: "1684,924,1857,950",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "engineering",
+            },
+            {
+                name: "computer science",
+                class: "computer-science",
+                shape: "rect",
+                coords: "1430,184,1576,233",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "computer-science",
+            },
+            {
+                name: "theory of computation",
+                class: "computer-science",
+                shape: "rect",
+                coords: "383,196,536,239",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "computer-science",
+            },
         ]
     },
     "physics": {
@@ -145,7 +186,7 @@ let DATA = {
                 name: "particle physics",
                 class: "fundamental-particles",
                 shape: "rect",
-                coords: "1488,1003,1727,1032",
+                coords: "1488,1003,1727,1038",
                 href: "#",
                 alt: "",
                 color: "white",
@@ -155,7 +196,7 @@ let DATA = {
                 name: "quantum gravity",
                 class: "quantum gravity",
                 shape: "rect",
-                coords: "1647,421,1898,455",
+                coords: "1647,421,1893,453",
                 href: "#",
                 alt: "",
                 color: "white",
@@ -191,7 +232,37 @@ let DATA = {
                 color: "white",
                 points_to: "quantum-physics",
             },
-            //philosophy 1338,2,1320,24,1316,47,1333,61,1345,71,1333,81,1330,91,1308,112,1304,139,1320,158,1352,171,1367,175,1369,188,1386,198,1352,208,1389,214,1437,212,1484,208,1465,220,1572,225,1535,244,1525,249,1540,256,1582,258,1635,264,1701,256,1764,256,1789,256,1822,247,1817,234,1844,230,1837,219,1864,220,1895,212,1908,203,1917,207,1913
+            {
+                name: "philosophy",
+                class: "philosophy",
+                shape: "poly",
+                coords: "1338,2,1320,24,1316,47,1333,61,1345,71,1333,81,1330,91,1308,112,1304,139,1320,158,1352,171,1367,175,1369,188,1386,198,1352,208,1389,214,1437,212,1484,208,1465,220,1572,225,1535,244,1525,249,1540,256,1582,258,1635,264,1701,256,1764,256,1789,256,1822,247,1817,234,1844,230,1837,219,1864,220,1895,212,1908,203,1917,207,1913,0",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "philosophy",
+            },
+            {
+                name: "optics",
+                class: "optics",
+                shape: "rect",
+                coords: "424,390,509,416",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "atomic-spectra",
+            },
+            {
+                name: "si units",
+                class: "si-units",
+                shape: "circle",
+                coords: "384,102,30",
+                href: "#",
+                alt: "SI Units",
+                color: "white",
+                points_to: "si-units",
+            }
+
         ]
     },
     "engineering": {
@@ -317,6 +388,16 @@ let DATA = {
                 color: "white",
                 points_to: "chain-of-life",
             },
+            {
+                name: "virus",
+                class: "virus",
+                shape: "rect",
+                coords: "808,1091,855,1115",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "virus",
+            },
         ]
     },
     "quantum-physics": {
@@ -346,14 +427,106 @@ let DATA = {
                 color: "white",
                 points_to: "chemistry",
             },
-            //quantum biology 782,1081,964,1109
-            //quantum computing 1160,774,1261,810
-            //superconductity 34,927,229,1022
-            //feynman diagrams 1387,804,1403,868,1403,918,1532,926,1535,877,1554,826,1549,795
-            //standard model 1559,798,1896,829
-            //quantum gravity 1667,146,1847,171
-            //quantum nose 750,1242,857,1242,841,1308,845,1391,812,1415,772,1391
-            //nuclear physics 1688,1078,1850,1103
+            {
+                name: "quantum biology",
+                class: "quantum-biology",
+                shape: "rect",
+                coords: "782,1081,964,1109",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "biology",
+            },
+            {
+                name: "quantum computing",
+                class: "quantum-computing",
+                shape: "rect",
+                coords: "1160,774,1261,810",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "quantum-computing",
+            },
+            {
+                name: "quantum simulation",
+                class: "quantum-simulation",
+                shape: "poly",
+                coords: "1272,797,1245,838,1362,838,1350,797",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "quantum-simulation",
+            },
+            {
+                name: "quantum gravity",
+                class: "quantum-gravity",
+                shape: "rect",
+                coords: "1667,146,1847,171",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "quantum-gravity",
+            },
+            {
+                name: "quantum nose",
+                class: "quantum-nose",
+                shape: "poly",
+                coords: "750,1242,857,1242,841,1308,845,1391,812,1415,772,1391",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "quantum-nose",
+            },
+            {
+                name: "superconductivity",
+                class: "superconductivity",
+                shape: "rect",
+                coords: "34,927,229,1022",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "superconductivity",
+            },
+            {
+                name: "feynman diagrams",
+                class: "not-yet",
+                shape: "poly",
+                coords: "1387,804,1403,868,1403,918,1532,926,1535,877,1554,826,1549,795",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "feynman-diagrams",
+            },
+            {
+                name: "standard model",
+                class: "standard-model",
+                shape: "rect",
+                coords: "1559,798,1896,829",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "fundamental-particles",
+            },
+            {
+                name: "nuclear physics",
+                class: "nuclear-physics",
+                shape: "rect",
+                coords: "1688,1078,1850,1103",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "physics",
+            },
+            {
+                name: "atomics spectra",
+                class: "atomics-spectra",
+                shape: "rect",
+                coords: "56,185,204,260",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "atomics-spectra",
+            },
 
         ]
     },
@@ -392,7 +565,18 @@ let DATA = {
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/mYcLuWHzfmE",
-        "imagemap": []
+        "imagemap": [
+            {
+                name: "can you see neutrinos",
+                class: "can-you-see-neutrinos-with-eyes",
+                shape: "rect",
+                coords: "219,861,342,837",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "can-you-see-neutrinos-with-eyes",
+            }
+        ]
     },
     "philosophy": {
         "title": "the map of philosophy",
@@ -416,15 +600,28 @@ let DATA = {
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=Wf0uxjWGwPk",
-        "imagemap": []
+        "imagemap": [
+            {
+                name: "gravitational waves",
+                class: "gravitational-waves",
+                shape: "poly",
+                coords: "1012,1324,1402,1324,1383,1357,1387,1641,953,1641,951,1409",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "gravitational-waves",
+            }
+        ]
     },
-    "things-to-do-with-plastics": {
-        "title": "the map of ",
-        "image": "images/.png",
+    "plastics": {
+        "title": "things-to-do-with-plastics",
+        "image": "images/plastics.jpg",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=bL7WvdNdk3Y",
-        "imagemap": []
+        "imagemap": [
+            
+        ]
     },
     "superconductivity": {
         "title": "the map of superconductivity",
@@ -435,7 +632,7 @@ let DATA = {
         "imagemap": []
     },
     "doom": {
-        "title": "the map of ",
+        "title": "the map of doom",
         "image": "images/doom.png",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
@@ -443,59 +640,103 @@ let DATA = {
         "imagemap": []
     },
     "atomic-spectroscopy": {
-        "title": "the map of ",
-        "image": "images/.png",
+        "title": "atomic spectroscopy",
+        "image": "images/atomic-spectra.png",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
-        "youtube_video": "https://www.youtube.com/watch?v=crWBFuUW6kI",
+        "youtube_video": "https://youtu.be/crWBFuUW6kI",
         "imagemap": []
     },
     "virus": {
-        "title": "the map of ",
-        "image": "images/.png",
+        "title": "the map of viruses",
+        "image": "images/virus.jpg",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/754YnbOtmvA",
         "imagemap": []
     },
-    "every-thing-in-space": {
-        "title": "the map of ",
-        "image": "images/.png",
+    "the-universe": {
+        "title": "The universe",
+        "image": "images/the-universe.png",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=uniGQrGLEoI",
-        "imagemap": []
+        "imagemap": [
+            {
+                name: "black holes",
+                class: "black-holes",
+                shape: "circle",
+                coords: "698,442,18",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "black-holes",
+            },
+            {
+                name: "black holes",
+                class: "black-holes",
+                shape: "poly",
+                coords: "937,128,936,147,948,159,956,179,979,188,996,182,998,159,1022,147,1023,131",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "black-holes",
+            },
+            {
+                name: "big bang",
+                class: "big-bang",
+                shape: "poly",
+                coords: "1384,62,1405,66,1415,127,1392,140",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "big-bang",
+            },
+        ]
     },
     "gravitational-waves": {
-        "title": "the map of ",
-        "image": "images/.png",
+        "title": "gravitational waves",
+        "image": "images/gravitational-wave-astronomy.png",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=AFhOzhe9mg4",
-        "imagemap": []
+        "imagemap": [
+            {
+                name: "black holes",
+                class: "black-holes",
+                shape: "circle",
+                coords: "264,206,29",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "black-holes",
+            },
+            {
+                name: "black holes",
+                class: "black-holes",
+                shape: "circle",
+                coords: "298,142,23",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "black-holes",
+            },
+        ]
     },
     "big-bang": {
-        "title": "the map of ",
-        "image": "images/.png",
+        "title": "the map of big-bang",
+        "image": "images/big-bang.png",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/P1Q8tS-9hYo",
         "imagemap": []
     },
-    "your-quantum-nose": {
-        "title": "the map of ",
-        "image": "images/.png",
+    "quantum-nose": {
+        "title": "your quantum nose",
+        "image": "images/your-quantum-nose.png",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/DJsJIVXkrGQ",
-        "imagemap": []
-    },
-    "gravitational-wave-astronomy": {
-        "title": "the map of ",
-        "image": "images/.png",
-        "author_name": "Dominic Walliman",
-        "author_link": "https://dominicwalliman.com/",
-        "youtube_video": "https://youtu.be/AFhOzhe9mg4",
         "imagemap": []
     },
     "the-state-of-quantum-computing-jan-2022": {
@@ -504,6 +745,72 @@ let DATA = {
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/gcbMKt079l8",
+        "imagemap": []
+    },
+    "can-you-see-neutrinos-with-eyes": {
+        "title": "can-you-see-neutrinos-with-eyes",
+        "image": "images/can-you-see-neutrinos-with-eyes.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "",
+        "imagemap": [
+            {
+                name: "standard model",
+                class: "standard-model",
+                shape: "rect",
+                coords: "755,232,244,132",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "fundamental-particles",
+            },
+        ]
+    },
+    "quantum-simulation": {
+        "title": "quantum simulation",
+        "image": "images/quantum-simulation.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://youtu.be/kD370qyxTyw",
+        "imagemap": [
+            {
+                name: "chemistry",
+                class: "chemistry",
+                shape: "rect",
+                coords: "2259,693,2429,748",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "chemistry",
+            },
+            {
+                name: "the state of quantum computing",
+                class: "the-state-of-quantum-computing",
+                shape: "rect",
+                coords: "1733,1513,1950,1580",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "the-state-of-quantum-computing-jan-2022",
+            },
+            {
+                name: "superconductivity",
+                class: "superconductivity",
+                shape: "rect",
+                coords: "1067,205,1394,254",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "superconductivity",
+            },
+        ]
+    },
+    "si-units": {
+        "title": "SI Units",
+        "image": "images/SI-Units.png",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://youtu.be/aYIbC25GNKs",
         "imagemap": []
     },
     "": {

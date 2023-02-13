@@ -49,7 +49,13 @@ function load_section(id) {
     // cosas del autor
     $("#author-name").html(datos.author_name)
     $("#author-link").attr("href", datos.author_link)
-    $("#youtube-video").attr("href", datos.youtube_video)
+    
+    if(datos.youtube_video != ""){
+        $("#youtube-video").show()
+        $("#youtube-video").attr("href", datos.youtube_video)
+    }else{
+        $("#youtube-video").hide()
+    }
 
 
     $(".container").html(load_imagemap(id))         //html() es para poner html dentro de un elemento
