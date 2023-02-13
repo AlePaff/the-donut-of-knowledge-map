@@ -1,6 +1,4 @@
 .container {
-  display: flex;
-  justify-content: center;
   border: #7c7c7c 3px solid;
   border-radius: 5px;
 }

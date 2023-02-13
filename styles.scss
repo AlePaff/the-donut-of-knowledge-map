@@ -17,8 +17,8 @@ $link-visitado: #d6d6d6;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     
     @include border();
     img{
