@@ -518,14 +518,14 @@ let DATA = {
                 points_to: "physics",
             },
             {
-                name: "atomics spectra",
-                class: "atomics-spectra",
+                name: "atomic spectra",
+                class: "atomic-spectra",
                 shape: "rect",
                 coords: "56,185,204,260",
                 href: "#",
                 alt: "",
                 color: "white",
-                points_to: "atomics-spectra",
+                points_to: "atomic-spectra",
             },
 
         ]
@@ -639,7 +639,7 @@ let DATA = {
         "youtube_video": "https://www.youtube.com/watch?v=Htf0XR6W9WQ",
         "imagemap": []
     },
-    "atomic-spectroscopy": {
+    "atomic-spectra": {
         "title": "atomic spectroscopy",
         "image": "images/atomic-spectra.png",
         "author_name": "Dominic Walliman",

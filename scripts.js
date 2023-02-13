@@ -6,7 +6,7 @@ function load_imagemap(id) {
     let img_src = DATA[id].image;
     let html = `<img id="img-` + id + `" src="` + img_src + `" usemap="#map-` + id + `" >`
     html += `<map name="map-` + id + `">`
-
+    
     imagemap.forEach(area => {
         html += `<area class="` + area.class + `" shape="` + area.shape + `" coords="` + area.coords + `" href="` + area.href + `" alt="` + area.alt + `" color="` + area.color + `" name="` + area.name + `"`
         //si tiene un puntero a otra seccion, se le añade el evento onclick
@@ -35,9 +35,11 @@ function load_section(id) {
     }
 
     let datos = DATA[id]
-
+    
+    console.log(stack)
     //volver atras y home button
     $("#atras").off("click").on("click", function () {
+        // stack = eliminarBucles(stack)
         stack.pop()        //saca el elemento recien agregado
         load_section(stack.pop())      //devuelve el elemento anterior
     })
@@ -46,7 +48,7 @@ function load_section(id) {
         load_section("donut")
     })
 
-    // cosas del autor
+    // autor y video
     $("#author-name").html(datos.author_name)
     $("#author-link").attr("href", datos.author_link)
     
@@ -88,6 +90,27 @@ function load_section(id) {
         ]
     });
 }
+
+//ejemplos
+//[a,b,c,d,c,d] -> [a,b,c,d]
+// [a,b,c,b] -> [a,b,c,b]       //no elimina bucles de 1
+// [a,b,c,b,b,b,b] -> [a,b,c,b]       //elimina si el ultimo elemento está repetido al lado
+//[a,b,c,d,e,f,d,e,f, g,h] -> [a,b,c,d,e,f,g,h]
+// function eliminarBucles(lista){
+//     let listaSinBucles = []
+//     let listaAux = lista.slice()        //copia de la lista
+//     while(listaAux.length > 0){
+//         let elemento = listaAux.shift()     //saca el primer elemento
+//         if(!listaSinBucles.includes(elemento)){
+//             listaSinBucles.push(elemento)
+//         }
+//     }
+//     //si hay [a,b,c,d,d,d] -> [a,b,c,d]
+//     if(listaSinBucles[listaSinBucles.length-1] == listaSinBucles[listaSinBucles.length-2]){
+//         listaSinBucles.pop()
+//     }
+//     return listaSinBucles
+// }
 
 
 $(document).ready(function () {
