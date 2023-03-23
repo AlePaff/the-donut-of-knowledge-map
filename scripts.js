@@ -1,12 +1,24 @@
 let stack = []
 
+function is_mobile_device() {
+    const WIDTH_MOBILE = 768;
+
+    let width = window.innerWidth
+    console.log("width: " + width)
+    return (width < WIDTH_MOBILE) ? true : false
+    // return navigator.userAgentData.mobile
+}
+
 
 function load_imagemap(id) {
     let imagemap = DATA[id].imagemap;
     let img_src = DATA[id].image;
-    let html = `<img id="img-` + id + `" src="` + img_src + `" usemap="#map-` + id + `" ` + `alt="`+ DATA[id].title + `" >`
+    if (!is_mobile_device() && DATA[id].image_webp) {
+        img_src = DATA[id].image_webp
+    }
+    let html = `<img id="img-` + id + `" src="` + img_src + `" usemap="#map-` + id + `" ` + `alt="` + DATA[id].title + `" >`
     html += `<map name="map-` + id + `">`
-    
+
     imagemap.forEach(area => {
         html += `<area class="` + area.class + `" shape="` + area.shape + `" coords="` + area.coords + `" href="` + area.href + `" alt="` + area.alt + `" color="` + area.color + `" name="` + area.name + `"`
         //si tiene un puntero a otra seccion, se le añade el evento onclick
@@ -35,8 +47,8 @@ function load_section(id) {
     }
 
     let datos = DATA[id]
-    
-    console.log(stack)
+
+    console.log(is_mobile_device())
     //volver atras y home button
     $("#atras").off("click").on("click", function () {
         // stack = eliminarBucles(stack)
@@ -51,11 +63,11 @@ function load_section(id) {
     // autor y video
     $("#author-name").html(datos.author_name)
     $("#author-link").attr("href", datos.author_link)
-    
-    if(datos.youtube_video != ""){
+
+    if (datos.youtube_video != "") {
         $("#youtube-video").show()
         $("#youtube-video").attr("href", datos.youtube_video)
-    }else{
+    } else {
         $("#youtube-video").hide()
     }
 
