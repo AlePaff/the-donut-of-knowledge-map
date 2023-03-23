@@ -2,6 +2,7 @@ let DATA = {
     "donut": {
         "title": "the donut of knowledge",
         "image": "images/donut.png",
+        "image_webp": "images/webp-format/donut.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=ohyai6GIRZg",
@@ -109,7 +110,8 @@ let DATA = {
     },
     "maths": {
         "title": "the map of maths",
-        "image": "images/math.png",        
+        "image": "images/math.png",
+        "image_webp": "images/webp-format/math.webp",            
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=OmJ-4B-mS-Y",
@@ -168,6 +170,7 @@ let DATA = {
     "physics": {
         "title": "the map of physics",
         "image": "images/physics.png",
+        "image_webp": "images/webp-format/physics.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=gAFAj3pzvAA",
@@ -268,6 +271,7 @@ let DATA = {
     "engineering": {
         "title": "the map of engineering",
         "image": "images/engineering.png",
+        "image_webp": "images/webp-format/engineering.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=pQgxiQAMTTo",
@@ -307,6 +311,7 @@ let DATA = {
     "computer-science": {
         "title": "the map of computer science",
         "image": "images/computer-science.png",
+        "image_webp": "images/webp-format/computer-science.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/SzJ46YA_RaA",
@@ -327,6 +332,7 @@ let DATA = {
     "quantum-computing": {
         "title": "the map of quantum computing",
         "image": "images/quantum-computing.png",
+        "image_webp": "images/webp-format/quantum-computing.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=-UlxHPIEVqA",
@@ -335,6 +341,7 @@ let DATA = {
     "chemistry": {
         "title": "the map of chemistry",
         "image": "images/chemistry.png",
+        "image_webp": "images/webp-format/chemistry.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/P3RXtoYCW4M",
@@ -374,6 +381,7 @@ let DATA = {
     "biology": {
         "title": "the map of biology",
         "image": "images/biology.png",
+        "image_webp": "images/webp-format/biology.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/wENhHnJI1ys",
@@ -403,6 +411,7 @@ let DATA = {
     "quantum-physics": {
         "title": "the map of quantum physics",
         "image": "images/quantum-physics.jpg",
+        "image_webp": "images/webp-format/quantum-physics.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/gAFAj3pzvAA",
@@ -533,6 +542,7 @@ let DATA = {
     "quantum-gravity": {
         "title": "the map of quantum gravity",
         "image": "images/quantum-gravity.png",
+        "image_webp": "images/webp-format/quantum-gravity.webp",        
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=d-86tNCSJsg",
@@ -562,6 +572,7 @@ let DATA = {
     "fundamental-particles": {
         "title": "the map of fundamental particles",
         "image": "images/fundamental-particles.png",
+        "image_webp": "images/webp-format/fundamental-particles.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/mYcLuWHzfmE",
@@ -581,6 +592,7 @@ let DATA = {
     "philosophy": {
         "title": "the map of philosophy",
         "image": "images/philosophy.png",
+        "image_webp": "images/webp-format/philosophy.webp",
         "author_name": "Carneades",
         "author_link": "https://www.carneades.org/",
         "youtube_video": "https://www.youtube.com/watch?v=YxBShJU_CKs",
@@ -589,6 +601,7 @@ let DATA = {
     "chain-of-life": {
         "title": "the chain of life",
         "image": "images/chain-of-life.png",
+        "image_webp": "images/webp-format/chain-of-life.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=GRm__SOzz6c",
@@ -597,6 +610,7 @@ let DATA = {
     "black-holes": {
         "title": "the map of black holes",
         "image": "images/black-holes.png",
+        "image_webp": "images/webp-format/black-holes.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=Wf0uxjWGwPk",
@@ -616,6 +630,7 @@ let DATA = {
     "plastics": {
         "title": "things-to-do-with-plastics",
         "image": "images/plastics.jpg",
+        "image_webp": "images/webp-format/plastics.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=bL7WvdNdk3Y",
@@ -626,6 +641,7 @@ let DATA = {
     "superconductivity": {
         "title": "the map of superconductivity",
         "image": "images/superconductivity.png",
+        "image_webp": "images/webp-format/superconductivity.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=bD2M7P6dTVA",
@@ -634,6 +650,7 @@ let DATA = {
     "doom": {
         "title": "the map of doom",
         "image": "images/doom.png",
+        "image_webp": "images/webp-format/doom.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=Htf0XR6W9WQ",
@@ -642,6 +659,7 @@ let DATA = {
     "atomic-spectra": {
         "title": "atomic spectroscopy",
         "image": "images/atomic-spectra.png",
+        "image_webp": "images/webp-format/atomic-spectra.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/crWBFuUW6kI",
@@ -650,6 +668,7 @@ let DATA = {
     "virus": {
         "title": "the map of viruses",
         "image": "images/virus.jpg",
+        "image_webp": "images/webp-format/virus.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/754YnbOtmvA",
@@ -658,6 +677,7 @@ let DATA = {
     "the-universe": {
         "title": "The universe",
         "image": "images/the-universe.png",
+        "image_webp": "images/webp-format/the-universe.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=uniGQrGLEoI",
@@ -697,6 +717,7 @@ let DATA = {
     "gravitational-waves": {
         "title": "gravitational waves",
         "image": "images/gravitational-wave-astronomy.png",
+        "image_webp": "images/webp-format/gravitational-wave-astronomy.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://www.youtube.com/watch?v=AFhOzhe9mg4",
@@ -726,6 +747,7 @@ let DATA = {
     "big-bang": {
         "title": "the map of big-bang",
         "image": "images/big-bang.png",
+        "image_webp": "images/webp-format/big-bang.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/P1Q8tS-9hYo",
@@ -734,6 +756,7 @@ let DATA = {
     "quantum-nose": {
         "title": "your quantum nose",
         "image": "images/your-quantum-nose.png",
+        "image_webp": "images/webp-format/your-quantum-nose.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/DJsJIVXkrGQ",
@@ -742,6 +765,7 @@ let DATA = {
     "the-state-of-quantum-computing-jan-2022": {
         "title": "The State of Quantum Computing Jan 2022",
         "image": "images/the-state-of-quantum-computing-jan-2022.png",
+        "image_webp": "images/webp-format/the-state-of-quantum-computing-jan-2022.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/gcbMKt079l8",
@@ -750,6 +774,7 @@ let DATA = {
     "can-you-see-neutrinos-with-eyes": {
         "title": "can-you-see-neutrinos-with-eyes",
         "image": "images/can-you-see-neutrinos-with-eyes.png",
+        "image_webp": "images/webp-format/can-you-see-neutrinos-with-eyes.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "",
@@ -769,6 +794,7 @@ let DATA = {
     "quantum-simulation": {
         "title": "quantum simulation",
         "image": "images/quantum-simulation.png",
+        "image_webp": "images/webp-format/quantum-simulation.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/kD370qyxTyw",
@@ -808,19 +834,21 @@ let DATA = {
     "si-units": {
         "title": "SI Units",
         "image": "images/SI-Units.png",
+        "image_webp": "images/webp-format/SI-Units.webp",
         "author_name": "Dominic Walliman",
         "author_link": "https://dominicwalliman.com/",
         "youtube_video": "https://youtu.be/aYIbC25GNKs",
         "imagemap": []
     },
-    "": {
-        "title": "",
-        "image": "images/.png",
-        "author_name": "Dominic Walliman",
-        "author_link": "https://dominicwalliman.com/",
-        "youtube_video": "",
-        "imagemap": []
-    }
+    // "": {
+    //     "title": "",
+    //     "image": "images/.png",
+    //     "image_webp": "images/webp-format/.webp",
+    //     "author_name": "Dominic Walliman",
+    //     "author_link": "https://dominicwalliman.com/",
+    //     "youtube_video": "",
+    //     "imagemap": []
+    // }
 
 
 
