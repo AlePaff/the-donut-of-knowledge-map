@@ -4,7 +4,7 @@ let stack = []
 function load_imagemap(id) {
     let imagemap = DATA[id].imagemap;
     let img_src = DATA[id].image;
-    let html = `<img id="img-` + id + `" src="` + img_src + `" usemap="#map-` + id + `" >`
+    let html = `<img id="img-` + id + `" src="` + img_src + `" usemap="#map-` + id + `" ` + `alt="`+ DATA[id].title + `" >`
     html += `<map name="map-` + id + `">`
     
     imagemap.forEach(area => {
