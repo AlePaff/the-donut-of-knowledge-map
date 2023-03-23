@@ -29,6 +29,14 @@ header {
   padding: 10px;
   margin-bottom: 4px;
 }
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "titulo_desc titulo_desc titulo_desc" "botones botones github" "autor autor autor";
+    overflow: auto;
+  }
+}
 
 #titulo_desc {
   grid-area: titulo_desc;
@@ -44,12 +52,22 @@ header {
   grid-area: github;
   justify-self: right;
 }
+@media screen and (max-width: 768px) {
+  #github {
+    display: none;
+  }
+}
 
 #autor {
   grid-area: autor;
   justify-self: right;
   align-self: end;
   white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  #autor {
+    justify-self: left;
+  }
 }
 #autor * {
   display: inline;

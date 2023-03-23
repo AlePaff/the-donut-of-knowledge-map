@@ -8,6 +8,9 @@ $color-fondo-botones-hover: lighten($color-fondo, 20%);
 $link-no-visitado: #d6d6d6;
 $link-visitado: #d6d6d6;
 // $max-width-zoom-out: 2600px;
+$mobile-device-width: 768px;
+
+
 
 
 //funcion poner border a los elementos
@@ -28,7 +31,6 @@ $link-visitado: #d6d6d6;
     }
 }
 
-
 body{
     // max-width: $max-width-zoom-out;
     background-color: $color-fondo;
@@ -47,6 +49,16 @@ header{
     grid-template-areas:
     "titulo_desc github"
     "botones autor";
+
+    @media screen and (max-width: $mobile-device-width) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "titulo_desc titulo_desc titulo_desc"
+        "botones botones github"
+        "autor autor autor";
+        overflow: auto;    
+    }
     
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
@@ -66,11 +78,19 @@ header{
 #github{
     grid-area: github;
     justify-self: right;
+
+    @media screen and (max-width: $mobile-device-width) {
+        display: none;
+    }
 }
 #autor{
     grid-area: autor;
     justify-self: right;
     align-self: end;
+
+    @media screen and (max-width: $mobile-device-width) {
+        justify-self: left;
+    }
 
     //mostrar todo en una sola linea
     white-space: nowrap;
@@ -78,8 +98,6 @@ header{
         display: inline;
     }
 }
-
-
 
 h4, p{
     margin: 0px;
@@ -114,4 +132,3 @@ a.button{
         transition: all 0.1s linear;
     }
 }
-
