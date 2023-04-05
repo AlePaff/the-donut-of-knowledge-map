@@ -4,7 +4,6 @@ function is_mobile_device() {
     const WIDTH_MOBILE = 768;
 
     let width = window.innerWidth
-    console.log("width: " + width)
     return (width < WIDTH_MOBILE) ? true : false
     // return navigator.userAgentData.mobile
 }
@@ -48,7 +47,6 @@ function load_section(id) {
 
     let datos = DATA[id]
 
-    console.log(is_mobile_device())
     //volver atras y home button
     $("#atras").off("click").on("click", function () {
         // stack = eliminarBucles(stack)
