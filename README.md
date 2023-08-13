@@ -5,3 +5,5 @@ Interesting and helpful Infographics to visualize complex branches of all scienc
 All the credit goes to [Domain of Science youtube channel](https://www.youtube.com/@domainofscience/) for the front page image and all the infographics.
 
 Pictures obtained from [Domain of Science Flickr](https://www.flickr.com/photos/95869671@N08/)
+
+* If you have any suggestions or ideas, please feel free to open an issue or a pull request.
