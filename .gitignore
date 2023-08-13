@@ -9,8 +9,7 @@
 /coverage
 
 #ignorar todos los archivos dentro de la carpeta "test"
-test/
-/test/
+**test/
 
 # production
 /build

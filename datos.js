@@ -98,6 +98,16 @@ let DATA = {
                 points_to: "doom",
             },
             {
+                name: "medicine",
+                class: "medicine",
+                shape: "poly",
+                coords: "1016,695,1002,829,1061,875,1121,931,1234,918,1251,918,1267,882,1312,855,1304,787,1272,763,1027,767,1027,726,1205,723,1156,680,1097,689,1056,694",
+                href: "#",
+                alt: "",
+                color: "white",
+                points_to: "medicine",
+            },
+            {
                 name: "",
                 class: "",
                 shape: "poly",
@@ -840,6 +850,15 @@ let DATA = {
         "youtube_video": "https://youtu.be/aYIbC25GNKs",
         "imagemap": []
     },
+    "medicine": {
+        "title": "The map of medicine",
+        "image": "images/the-map-of-medicine.png",
+        "image_webp": "images/webp-format/the-map-of-medicine.webp",
+        "author_name": "Dominic Walliman",
+        "author_link": "https://dominicwalliman.com/",
+        "youtube_video": "https://www.youtube.com/watch?v=CkwSeMrOPjc",
+        "imagemap": []
+    },
     // "": {
     //     "title": "",
     //     "image": "images/.png",
@@ -849,8 +868,6 @@ let DATA = {
     //     "youtube_video": "",
     //     "imagemap": []
     // }
-
-
 
 
 }
